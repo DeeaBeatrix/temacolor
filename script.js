@@ -17,6 +17,7 @@ const switchColor = () => {
     colorSwitcherContainer.style.backgroundColor = listOfColors[index];
     currentColor.innerText = listOfColors[index];
     currentColor.style.color = listOfColors[index];
+    colorSwitcherContainer.style.transitionProperty="40,60"
 };
 
 colorSwitcherButton.addEventListener('click', switchColor);
@@ -41,11 +42,13 @@ colorSwitcherButton.addEventListener('click', resetCalc);
 // ----- previous button -----
 
 const switchPrevious = () => {
+    resetCalc();
     switchColor();
-    if (numberPrevious = numberOfReset) {
-       numberOfReset--;
-    }
-    contorizator.innerText = `Change in color: ${numberPrevious}`;
+    // switchColor();
+    // if (numberPrevious = numberOfReset) {
+    //    numberOfReset--;
+    // }
+    // contorizator.innerText = `Change in color: ${numberOfReset}`;
 };  
 
 previousColor.addEventListener('click', switchPrevious);
@@ -70,7 +73,6 @@ resetToPink.addEventListener('click', backToPink);
 // --- In loc de click me, sa avem previous si next = cu ele nav prin array culori - DONE
 
 // ----- Tranzitie pe schimbarile de culori de background ------
-
 
 
 
