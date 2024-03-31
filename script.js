@@ -51,6 +51,8 @@ const switchPrevious = () => {
     // contorizator.innerText = `Change in color: ${numberOfReset}`;
 };  
 
+previousColor.addEventListener('click', switchPrevious); 
+
 previousColor.addEventListener('click', switchPrevious);
 
 // ----- Butonul de reset inapoi la culoarea roz------
