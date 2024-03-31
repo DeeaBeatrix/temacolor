@@ -41,12 +41,16 @@ colorSwitcherButton.addEventListener('click', resetCalc);
 // ----- previous button -----
 
 const switchPrevious = () => {
+    resetCalc();
     switchColor();
-    if (numberPrevious = numberOfReset) {
-       numberOfReset--;
-    }
-    contorizator.innerText = `Change in color: ${numberPrevious}`;
+    // switchColor();
+    // if (numberPrevious = numberOfReset) {
+    //    numberOfReset--;
+    // }
+    // contorizator.innerText = `Change in color: ${numberOfReset}`;
 };  
+
+previousColor.addEventListener('click', switchPrevious); 
 
 previousColor.addEventListener('click', switchPrevious);
 
